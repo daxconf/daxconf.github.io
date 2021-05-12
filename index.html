@@ -32,13 +32,29 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- TODO Finalize and migrate to style.css -->
     <style>
       #schedule h5 span {
         font-size: 100%;
       }
       .qa {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        margin-bottom: 3rem;
       }
+      .qa dt {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+      .qa dd {
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+      }
+      /* Optional hide first top border (only show between questions)
+      .qa dt:first-child {
+        border-top: none;
+      }
+      */
       .bg-dark {
         background-color: #333333 !important;
       }
@@ -507,52 +523,74 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-md-10">
               <div class="block-heading-1">
-                <h2 class="text-center">FAQ</h2>
+                <h2 class="text-center mb-4">FAQ</h2>
                 <!-- TODO: others? -->
-                <p class="mt-3"></p>
-                <div class="qa">
-                  <p class="mt-3 mb-2"><b>Q: Where is DAX 2021?</b></p>
-                  <p class="mt-2 mb-3">
-                    A: DAX 2021 will be held online using Zoom.
-                  </p>
-                </div>
-                <div class="qa">
-                  <p class="mt-3 mb-2"><b>Q: When does registration open?</b></p>
-                  <p class="mt-2 mb-3">
-                    A: Registration will open once the date is finalized.
-                  </p>
-                </div>
-                <div class="qa">
-                  <p class="mt-3 mb-2"><b>Q: What is the cost to register?</b></p>
-                  <p class="mt-2 mb-3">
-                    A: DAX 2021 will be free to attend.
-                  </p>
-                </div>
-                <div class="qa">
-                  <p class="mt-3 mb-2"><b>Q: Can my computer or mobile device handle the event?</b></p>
-                  <p class="mt-2 mb-3">
-                    A: Any PC, phone, or mobile device capable of running Zoom will work.
-                  </p>
-                </div>
-                <!-- https://confcodeofconduct.com/ -->
-                <div class="qa">
-                  <p class="mt-3 mb-2">
-                    <b>Q: Does DAX have a code of conduct?</b>
-                  </p>
-                  <p class="mt-2 mb-3">
-                    A: DAX is dedicated to providing a harassment-free
-                    conference experience for everyone, regardless of gender,
-                    gender identity and expression, age, sexual orientation,
-                    disability, physical appearance, body size, race, ethnicity,
-                    religion (or lack thereof), or technology choices. We do not
-                    tolerate harassment of conference participants in any form.
-                    Sexual language and imagery is not appropriate for any
-                    conference venue, including talks, workshops, parties,
-                    Twitter and other online media. Conference participants
-                    violating these rules may be sanctioned or expelled from the
-                    conference at the discretion of the conference organizers.
-                  </p>
-                </div>
+                <h3>General questions</h3>
+                <dl class="qa">
+                  <dt>What is the DAX Conference?</dt>
+                  <dd>
+                    DAX is the annual premier event that serves as a focal meeting point for the data engineering community. The event is hosted and organized by the Data Works MD community. Attendees will include both newcomers and experts.
+                  </dd>
+                  <dt>What is Data Works MD?</dt>
+                  <dd>
+                    <a href="https://dataworksmd.org/">Data Works MD</a> is a community of professionals, students, and enthusiasts living and working in the Maryland area that are interested in topics related to data science, data analytics, data products, software engineering, machine learning, and other data engineering topics.
+                  </dd>
+                  <dt>When is DAX 2021?</dt>
+                  <dd>
+                    DAX 2021 takes place on Saturday, September 18th, 2021. <a href="#schedule">Take a look at the schedule</a> for details on the conference agenda.
+                  </dd>
+                  <dt>Where is DAX 2021?</dt>
+                  <dd>
+                    DAX 2021 is being held online via <a href="https://zoom.us/">Zoom</a> and Slack.
+                  </dd>
+                  <dt>Who do I contact with additional questions or suggestions?</dt>
+                  <dd>
+                    Please email <a href="mailto:info@daxconf.org">info@daxconf.org</a> with your questions or suggestions.
+                  </dd>
+                </dl>
+                <h3>Registration questions</h3>
+                <dl class="qa">
+                  <dt>Why should I attend DAX?</dt>
+                  <dd>
+                    Newcomers to data engineering will learn the basics from some of the most experienced practitioners. Professionals will be able to network with their peers and learn about cutting-edge data projects.
+                  </dd>
+                  <dt>How much does it cost?</dt>
+                  <dd>
+                    DAX 2021 is free to attend. <!-- TODO: Add "Register now!" link here when available -->
+                  </dd>
+                  <dt>Can I cancel my registration?</dt>
+                  <dd>
+                    Yes, there is no cost to register or cancel. We ask that you cancel 24 hours in advance if possible.
+                  </dd>
+                </dl>
+                <h3>Event questions</h3>
+                <dl class="qa">
+                  <dt>How can I find out when someone is scheduled to present?</dt>
+                  <dd>
+                    The speaker schedule is available on the conference website.
+                  </dd>
+                  <dt>Can my computer or mobile device handle the event?</dt>
+                  <dd>
+                    Any PC, phone, or mobile device capable of running Zoom will work.
+                  </dd>
+                  <dt>How can I ask questions to the speakers?</dt>
+                  <dd>
+                    The speakers will be available after their presentation to take questions on Slack.
+                  </dd>
+                  <dt>Will the presentations be recorded?</dt>
+                  <dd>
+                    Yes, all presentations will be available after the event on YouTube.
+                  </dd>
+                  <dt>Will I be on video?</dt>
+                  <dd>
+                    We ask that all attendees mute their microphones and disable their video.
+                  </dd>
+                  <dt>What is the code of conduct for DAX?</dt>
+                  <dd>
+                    <!-- https://confcodeofconduct.com/ -->
+                    DAX is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter, and other online media. Conference participants violating these rules will be sanctioned or expelled from the conference at the discretion of the conference organizers.
+                  </dd>
+                </dl>
               </div>
             </div>
           </div>
