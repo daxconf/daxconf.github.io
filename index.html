@@ -38,23 +38,51 @@
         font-size: 100%;
       }
       .qa {
-        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 1rem 0 3rem 0;
+        padding: 0;
       }
       .qa dt {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
-        margin-bottom: 0.5rem;
-        margin-top: 1rem;
-        padding-top: 1rem;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+        /* Required for proper chevron icon placement */
+        position: relative;
+      }
+      .qa dt.collapsed:hover {
+        background-color: rgba(0,0,0,0.025);
+      }
+      .qa dt > span.icon {
+        color: #939393;
+        display: inline-block;
+        left: 10px;
+        position: absolute;
+        top: 1.3rem;
+      }
+      .qa dt > span.icon:before {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        transform: rotate(90deg);
+        transition: 0.3s all ease;
+      }
+      .qa dt.collapsed {
+        font-weight: normal;
+      }
+      .qa dt.collapsed > span.icon:before {
+        font-weight: normal;
+        transform: rotate(0);
       }
       .qa dd {
-        margin-bottom: 1rem;
-        margin-top: 0.5rem;
+        margin: 0;
+        padding: 0;
       }
-      /* Optional hide first top border (only show between questions)
-      .qa dt:first-child {
-        border-top: none;
+      .qa dd > div {
+        padding: 0 0.75rem 1rem 2.25rem;
       }
-      */
       .bg-dark {
         background-color: #333333 !important;
       }
@@ -523,72 +551,142 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-md-10">
               <div class="block-heading-1">
-                <h2 class="text-center mb-4">FAQ</h2>
+                <h2 class="text-center mb-5">FAQ</h2>
                 <!-- TODO: others? -->
                 <h3>General questions</h3>
                 <dl class="qa">
-                  <dt>What is the DAX Conference?</dt>
-                  <dd>
-                    DAX is the annual premier event that serves as a focal meeting point for the data engineering community. The event is hosted and organized by the Data Works MD community. Attendees will include both newcomers and experts.
+                  <dt class="collapsed" aria-controls="faq-01" data-target="#faq-01" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    What is the DAX Conference?
+                  </dt>
+                  <dd class="collapse" id="faq-01">
+                    <div>
+                      DAX is the annual premier event that serves as a focal meeting point for the data engineering community. The event is hosted and organized by the Data Works MD community. Attendees will include both newcomers and experts.
+                    </div>
                   </dd>
-                  <dt>What is Data Works MD?</dt>
-                  <dd>
-                    <a href="https://dataworksmd.org/">Data Works MD</a> is a community of professionals, students, and enthusiasts living and working in the Maryland area that are interested in topics related to data science, data analytics, data products, software engineering, machine learning, and other data engineering topics.
+                  <dt class="collapsed" aria-controls="faq-02" data-target="#faq-02" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    What is Data Works MD?
+                  </dt>
+                  <dd class="collapse" id="faq-02">
+                    <div>
+                      <a href="https://dataworksmd.org/">Data Works MD</a> is a community of professionals, students, and enthusiasts living and working in the Maryland area that are interested in topics related to data science, data analytics, data products, software engineering, machine learning, and other data engineering topics.
+                    </div>
                   </dd>
-                  <dt>When is DAX 2021?</dt>
-                  <dd>
-                    DAX 2021 takes place on Saturday, September 18th, 2021. <a href="#schedule">Take a look at the schedule</a> for details on the conference agenda.
+                  <dt class="collapsed" aria-controls="faq-03" data-target="#faq-03" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    When is DAX 2021?</dt>
+                  <dd class="collapse" id="faq-03">
+                    <div>
+                      DAX 2021 takes place on Saturday, September 18th, 2021. <a href="#schedule">Take a look at the schedule</a> for details on the conference agenda.
+                    </div>
                   </dd>
-                  <dt>Where is DAX 2021?</dt>
-                  <dd>
-                    DAX 2021 is being held online via <a href="https://zoom.us/">Zoom</a> and Slack.
+                  <dt class="collapsed" aria-controls="faq-04" data-target="#faq-04" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Where is DAX 2021?
+                  </dt>
+                  <dd class="collapse" id="faq-04">
+                    <div>
+                      DAX 2021 is being held online via <a href="https://zoom.us/">Zoom</a> and Slack.
+                    </div>
                   </dd>
-                  <dt>Who do I contact with additional questions or suggestions?</dt>
-                  <dd>
-                    Please email <a href="mailto:info@daxconf.org">info@daxconf.org</a> with your questions or suggestions.
+                  <dt class="collapsed" aria-controls="faq-05" data-target="#faq-05" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Who do I contact with additional questions or suggestions?
+                  </dt>
+                  <dd class="collapse" id="faq-05">
+                    <div>
+                      Please email <a href="mailto:info@daxconf.org">info@daxconf.org</a> with your questions or suggestions.
+                    </div>
                   </dd>
                 </dl>
                 <h3>Registration questions</h3>
                 <dl class="qa">
-                  <dt>Why should I attend DAX?</dt>
-                  <dd>
-                    Newcomers to data engineering will learn the basics from some of the most experienced practitioners. Professionals will be able to network with their peers and learn about cutting-edge data projects.
+                  <dt class="collapsed" aria-controls="faq-06" data-target="#faq-06" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Why should I attend DAX?
+                  </dt>
+                  <dd class="collapse" id="faq-06">
+                    <div>
+                      Newcomers to data engineering will learn the basics from some of the most experienced practitioners. Professionals will be able to network with their peers and learn about cutting-edge data projects.
+                    </div>
                   </dd>
-                  <dt>How much does it cost?</dt>
-                  <dd>
-                    DAX 2021 is free to attend. <!-- TODO: Add "Register now!" link here when available -->
+                  <dt class="collapsed" aria-controls="faq-07" data-target="#faq-07" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    How much does it cost?
+                  </dt>
+                  <dd class="collapse" id="faq-07">
+                    <div>
+                      <!-- TODO: Add "Register now!" link here when available -->
+                      DAX 2021 is free to attend.
+                    </div>
                   </dd>
-                  <dt>Can I cancel my registration?</dt>
-                  <dd>
-                    Yes, there is no cost to register or cancel. We ask that you cancel 24 hours in advance if possible.
+                  <dt class="collapsed" aria-controls="faq-08" data-target="#faq-08" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Can I cancel my registration?
+                  </dt>
+                  <dd class="collapse" id="faq-08">
+                    <div>
+                      Yes, there is no cost to register or cancel. We ask that you cancel 24 hours in advance if possible.
+                    </div>
                   </dd>
                 </dl>
                 <h3>Event questions</h3>
                 <dl class="qa">
-                  <dt>How can I find out when someone is scheduled to present?</dt>
-                  <dd>
-                    The speaker schedule is available on the conference website.
+                  <dt class="collapsed" aria-controls="faq-09" data-target="#faq-09" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    How can I find out when someone is scheduled to present?
+                  </dt>
+                  <dd class="collapse" id="faq-09">
+                    <div>
+                      The speaker schedule is available on the conference website.
+                    </div>
                   </dd>
-                  <dt>Can my computer or mobile device handle the event?</dt>
-                  <dd>
-                    Any PC, phone, or mobile device capable of running Zoom will work.
+                  <dt class="collapsed" aria-controls="faq-10" data-target="#faq-10" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Can my computer or mobile device handle the event?
+                  </dt>
+                  <dd class="collapse" id="faq-10">
+                    <div>
+                      Any PC, phone, or mobile device capable of running Zoom will work.
+                    </div>
                   </dd>
-                  <dt>How can I ask questions to the speakers?</dt>
-                  <dd>
-                    The speakers will be available after their presentation to take questions on Slack.
+                  <dt class="collapsed" aria-controls="faq-11" data-target="#faq-11" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    How can I ask questions to the speakers?
+                  </dt>
+                  <dd class="collapse" id="faq-11">
+                    <div>
+                      The speakers will be available after their presentation to take questions on Slack.
+                    </div>
                   </dd>
-                  <dt>Will the presentations be recorded?</dt>
-                  <dd>
-                    Yes, all presentations will be available after the event on YouTube.
+                  <dt class="collapsed" aria-controls="faq-12" data-target="#faq-12" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Will the presentations be recorded?
+                  </dt>
+                  <dd class="collapse" id="faq-12">
+                    <div>
+                      Yes, all presentations will be available after the event on YouTube.
+                    </div>
                   </dd>
-                  <dt>Will I be on video?</dt>
-                  <dd>
-                    We ask that all attendees mute their microphones and disable their video.
+                  <dt class="collapsed" aria-controls="faq-13" data-target="#faq-13" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    Will I be on video?
+                  </dt>
+                  <dd class="collapse" id="faq-13">
+                    <div>
+                      We ask that all attendees mute their microphones and disable their video.
+                    </div>
                   </dd>
-                  <dt>What is the code of conduct for DAX?</dt>
-                  <dd>
-                    <!-- https://confcodeofconduct.com/ -->
-                    DAX is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter, and other online media. Conference participants violating these rules will be sanctioned or expelled from the conference at the discretion of the conference organizers.
+                  <dt class="collapsed" aria-controls="faq-14" data-target="#faq-14" data-toggle="collapse" aria-expanded="false" role="button">
+                    <span class="icon icon-chevron-right"></span>
+                    What is the code of conduct for DAX?
+                  </dt>
+                  <dd class="collapse" id="faq-14">
+                    <div>
+                      <!-- https://confcodeofconduct.com/ -->
+                      DAX is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter, and other online media. Conference participants violating these rules will be sanctioned or expelled from the conference at the discretion of the conference organizers.
+                    </div>
                   </dd>
                 </dl>
               </div>
