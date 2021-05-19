@@ -361,6 +361,9 @@ jQuery(document).ready(function ($) {
   };
   OnePageNavigation();
 
+  // Use top padding of first container to offset expanded sticky header height (prevent content underflow)
+  $(".ftco-cover-1 > .container").css("padding-top", $('header').outerHeight());
+
   var siteScroll = function () {
     var st = $(window).scrollTop();
     if (st > 100) {

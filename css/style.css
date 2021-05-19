@@ -922,7 +922,7 @@ h1, h2, h3, h4, h5,
 }
 
 .sticky-wrapper {
-  position: relative;
+  position: absolute;
   z-index: 100;
   width: 100%;
 }
@@ -1613,8 +1613,11 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 .ftco-cover-1 > .container {
+  /* padding-top is automatically set via javascript to offset sticky header */
   position: relative;
 }
 .ftco-cover-1.overlay {
