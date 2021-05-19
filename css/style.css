@@ -1614,9 +1614,6 @@ h1, h2, h3, h4, h5,
   background-position: center center;
   background-repeat: no-repeat;
 }
-.ftco-cover-1, .ftco-cover-1 .container > .row {
-  height: 50vh;
-}
 .ftco-cover-1 > .container {
   position: relative;
 }
