@@ -922,7 +922,7 @@ h1, h2, h3, h4, h5,
 }
 
 .sticky-wrapper {
-  position: relative;
+  position: absolute;
   z-index: 100;
   width: 100%;
 }
@@ -1613,11 +1613,11 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-.ftco-cover-1, .ftco-cover-1 .container > .row {
-  height: 50vh;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 .ftco-cover-1 > .container {
+  /* padding-top is automatically set via javascript to offset sticky header */
   position: relative;
 }
 .ftco-cover-1.overlay {
@@ -1631,7 +1631,7 @@ h1, h2, h3, h4, h5,
   right: 0;
   bottom: 0;
   opacity: 0.9;
-  background: red;
+  background: gray;
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #ff5757), color-stop(100%, #00d9ff));
   background: -o-linear-gradient(45deg, #ff5757 0%, #00d9ff 100%);
   background: -o-linear-gradient(45deg, #ff5757 0%, grey 75%);

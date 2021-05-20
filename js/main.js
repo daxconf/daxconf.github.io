@@ -361,17 +361,18 @@ jQuery(document).ready(function ($) {
   };
   OnePageNavigation();
 
-  var siteScroll = function () {
-    $(window).scroll(function () {
-      var st = $(this).scrollTop();
+  // Use top padding of first container to offset expanded sticky header height (prevent content underflow)
+  $(".ftco-cover-1 > .container").css("padding-top", $('header').outerHeight());
 
-      if (st > 100) {
-        $(".js-sticky-header").addClass("shrink");
-      } else {
-        $(".js-sticky-header").removeClass("shrink");
-      }
-    });
+  var siteScroll = function () {
+    var st = $(window).scrollTop();
+    if (st > 100) {
+      $(".js-sticky-header").addClass("shrink");
+    } else {
+      $(".js-sticky-header").removeClass("shrink");
+    }
   };
+  $(window).scroll(function () { siteScroll(); });
   siteScroll();
 
   var counter = function () {
