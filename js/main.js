@@ -223,7 +223,7 @@ jQuery(document).ready(function ($) {
         center: false,
         items: 1,
         loop: false,
-        stagePadding: 0,
+        stagePadding: 30,
         margin: 15,
         autoplay: false,
         nav: false,
@@ -241,7 +241,7 @@ jQuery(document).ready(function ($) {
           },
           992: {
             margin: 30,
-            stagePadding: 0,
+            stagePadding: 30,
             nav: false,
             responsiveRefreshRate: 10,
             touchDrag: false,
@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
           },
           1200: {
             margin: 30,
-            stagePadding: 0,
+            stagePadding: 30,
             nav: false,
             responsiveRefreshRate: 10,
             touchDrag: false,
@@ -342,6 +342,7 @@ jQuery(document).ready(function ($) {
       "click",
       ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a[href^='#']",
       function (e) {
+        // TODO: Consider allowing default and implementing history (e.g. back button)
         e.preventDefault();
 
         var hash = this.hash;
