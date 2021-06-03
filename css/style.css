@@ -274,7 +274,8 @@ body {
   font-size: 1rem;
 }
 body:before {
-  position: absolute;
+  /* position fixed required to extend full browser height for mobile menu open bg fade overlay */
+  position: fixed;
   content: "";
   left: 0;
   right: 0;
