@@ -1155,6 +1155,7 @@ h1, h2, h3, h4, h5,
 .block-counter-1 .caption {
   display: block;
   line-height: 1;
+  color: white;
 }
 .block-counter-1 .number {
   color: #ff5757;
