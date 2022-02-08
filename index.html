@@ -52,6 +52,9 @@
       #schedule h5 span {
         font-size: 100%;
       }
+      #navRegisterButton {
+        color: #fff !important;
+      }
       .qa {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         margin: 1rem 0 3rem 0;
@@ -99,7 +102,7 @@
         padding: 0 0.75rem 1rem 2.25rem;
       }
       .bg-dark {
-        background-color: #333333 !important;
+        background-color: #575757 !important;
       }
     </style>
   </head>
@@ -140,11 +143,19 @@
                 >
                   <li><a href="#about" class="nav-link">About</a></li>
                   <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                  <li><a href="#speakers" class="nav-link">Speakers</a></li>
                   <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
                   <li><a href="#faq" class="nav-link">FAQ</a></li>
                   <li>
                     <a href="https://dataworksmd.org/" class="nav-link"
                       >Data Works MD</a
+                    >
+                  </li>
+                  <li>
+                    <a class="btn btn-primary text-white shadow-none rounded p-1"
+                      href="http://dax2022.eventbrite.com/"
+                      id="navRegisterButton"
+                      >Register Now</a
                     >
                   </li>
                 </ul>
@@ -199,7 +210,7 @@
       </div>
 
       <!-- about blurb and icons -->
-      <div class="site-section py-5 bg-dark" id="about">
+      <div class="site-section py-5 bg-light" id="about">
         <div class="container">
           <div class="row mb-5 justify-content-center">
             <div class="col-md-10 text-center">
@@ -247,16 +258,16 @@
         </div>
       </div>
 
-      <div class="site-section py-5 bg-light" id="schedule">
+      <div class="site-section py-5 bg-dark" id="schedule">
         <div class="container">
           <div class="row mb-10 justify-content-center">
-            <div class="col-md-10 text-center">
+            <div class="col-md-12 text-center">
               <div class="block-heading-1 schedule">
                 <h2>Schedule</h2>
 
                 <div class="card my-4">
                   <div class="card-header">8:00 AM - 8:55 AM</div>
-                  <div class="card-body topic-check">
+                  <div class="card-body topic-check text-black">
                     <h5 class="card-title mb-0">
                       <span class="icon-pencil-square-o"></span> Registration
                       and Check-In
@@ -267,7 +278,7 @@
 
                 <div class="card my-4">
                   <div class="card-header">9:00 AM - 9:15 AM</div>
-                  <div class="card-body topic-info">
+                  <div class="card-body topic-info text-black">
                     <h5 class="card-title">Opening Remarks</h5>
                     <i class="fas fa-user"></i>
                     <a href="https://www.linkedin.com/in/jasonbarbour/">
@@ -278,9 +289,9 @@
                   </div>
                 </div>
 
-                <div class="card my-4">
+                <div class="card mt-4">
                   <div class="card-header">9:20 AM - 10:05 AM</div>
-                  <div class="card-body topic-keynote">
+                  <div class="card-body topic-keynote text-black">
                     <h5 class="card-title">
                       <span class="icon-microphone"></span> Keynote
                     </h5>
@@ -292,11 +303,22 @@
                     Emerging Technologies
                     <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
                   </div>
+                  <div class="bg-light text-black">
+                    <div class="pt-3">
+                      <div class="mx-3 text-left">
+                        <p>
+                          <!-- Talk Description -->
+                          Data-driven applications are the norm in business, industry, and our personal lives. These applications increasingly engage various existing and emerging technologies, such as Virtual Reality, Augmented Reality, Autonomous Systems, Computer Vision, Digital Twins, Blockchain, Internet of Things, and more. The addition of AI to the data process flows enables the applications to be more than data-driven, but become insights-driven, intelligent, smart, and value-oriented. The future of AI will thus focus on value creation at the convergence of emerging technologies.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                
 
-                <div class="card my-4">
+                <div class="card mt-4">
                   <div class="card-header">10:10 AM - 10:55 AM</div>
-                  <div class="card-body topic-datascience">
+                  <div class="card-body topic-datascience text-black">
                     <h5 class="card-title">
                       <span class="icon-flask"></span> Data Science Track -
                       Session 1
@@ -314,11 +336,20 @@
                     Processing
                     <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
                   </div>
+                  <div class="bg-light text-black">
+                    <div class="pt-3">
+                      <div class="mx-3 text-left">
+                        <p>
+                          As cyber security attacks increase exponentially across businesses and national infrastructure, compliance is becoming more and more important to gauge and track. In the past, the compliance process has been mostly manual and time consuming. Utilizing the latest advancements in Deep Learning NLP, we have built an automated end to end solution to automatically process and score compliance policy documents. In this talk, we will outline our semi-supervised method to score various policy documents across different compliance standards.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="card my-4">
                   <div class="card-header">11:00 AM - 11:45 AM</div>
-                  <div class="card-body topic-analytic">
+                  <div class="card-body topic-analytic text-black">
                     <h5 class="card-title">
                       <span class="icon-cloud"></span> Analytic Track - Session
                       1
@@ -330,7 +361,7 @@
 
                 <div class="card my-4">
                   <div class="card-header">11:55 AM - 1:00 PM</div>
-                  <div class="card-body topic-break">
+                  <div class="card-body topic-break text-black">
                     <h5 class="card-title mb-0">
                       <span class="icon-cutlery"></span> Lunch
                     </h5>
@@ -339,19 +370,18 @@
 
                 <div class="card my-4">
                   <div class="card-header">1:05 PM - 1:50 PM</div>
-                  <div class="card-body topic-exploration">
+                  <div class="card-body topic-exploration text-black">
                     <h5 class="card-title">
                       <span class="icon-bar-chart"></span> Exploration Track -
                       Session 1
                     </h5>
                     Finalizing Speaker
-                    <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
                   </div>
                 </div>
 
                 <div class="card my-4">
                   <div class="card-header">1:55 PM - 2:40 PM</div>
-                  <div class="card-body topic-datascience">
+                  <div class="card-body topic-datascience text-black">
                     <h5 class="card-title">
                       <span class="icon-flask"></span> Data Science Track -
                       Session 2
@@ -362,11 +392,20 @@
                     - Streamlining Data: Tidy Data as a Service
                     <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
                   </div>
+                  <div class="bg-light text-black">
+                    <div class="pt-3">
+                      <div class="mx-3 text-left">
+                        <p>
+                          Streamline Data Science is a company whose goal is to deliver tidy data as a service.  Tidy data is not reliant on one person or spreadsheet - it's managed data that is cleaned and curated. It's the data that allows you to make data-driven decisions.  We aim to provide an ELT service for most clients, with bespoke solutions for their "untidy" data.  Our process is to take operations, especially manual manipulations in Excel spreadsheets, and turn them into an internal codebase that automatically returns your data in a tidy format in a data warehouse and/or pushed back to your internal data warehouse.  We also deliver a high level dashboard and automated reports for clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="card my-4">
                   <div class="card-header">2:45 PM - 3:00 PM</div>
-                  <div class="card-body topic-break">
+                  <div class="card-body topic-break text-black">
                     <h5 class="card-title mb-0">
                       <span class="icon-cutlery"></span> Afternoon Break
                     </h5>
@@ -375,7 +414,7 @@
 
                 <div class="card my-4">
                   <div class="card-header">3:05 PM - 3:50 PM</div>
-                  <div class="card-body topic-analytic">
+                  <div class="card-body topic-analytic text-black">
                     <h5 class="card-title">
                       <span class="icon-cloud"></span> Analytic Track - Session
                       2
@@ -387,7 +426,7 @@
 
                 <div class="card my-4">
                   <div class="card-header">3:55 PM - 4:40 PM</div>
-                  <div class="card-body topic-exploration">
+                  <div class="card-body topic-exploration text-black">
                     <h5 class="card-title">
                       <span class="icon-bar-chart"></span>
                       Exploration Track - Session 2
@@ -396,14 +435,23 @@
                       >Sean Mussenden</a
                     >
                     - Investigative Reporting with Remote Sensing
-                    >
                     <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
+                  </div>
+                  <div class="bg-light text-black">
+                    <div class="pt-3">
+                      <div class="mx-3 text-left">
+                        <p>
+                          <!-- Talk Description -->
+                          An overview of how data journalists are capitalizing on the increasing availability of high-quality satellite imagery and remote-sensed satellite data to drive meaningful investigative reporting.  Three examples: BuzzFeed News won a Pulitzer using a novel technique to identify Muslim prison camps in China. The Washington Post showed how neglected Russian natural gas fields were spewing climate-warming methane into the atmosphere. A project I worked on used urban tree cover data to show how poor Baltimore neighborhoods have less cooling tree cover than wealthier neighborhoods. 
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="card my-4">
                   <div class="card-header">4:45 PM - 5:00 PM</div>
-                  <div class="card-body topic-info">
+                  <div class="card-body topic-info text-black">
                     <h5 class="card-title"><span></span> Closing Remarks</h5>
                     <a href="https://www.linkedin.com/in/jasonbarbour/">
                       Jason Barbour</a
@@ -413,7 +461,7 @@
 
                 <div class="card my-4">
                   <div class="card-header">5:00 PM - 7:OO PM</div>
-                  <div class="card-body topic-check">
+                  <div class="card-body topic-check text-black">
                     <h5 class="card-title mb-0">
                       <span class="icon-glass"></span> Cocktails
                     </h5>
@@ -426,9 +474,110 @@
         </div>
       </div>
 
+      <div class="site-section py-5 bg-light" id="speakers">
+        <div class="container">
+          <div class="row mb-10 justify-content-center">
+            <div class="col-md-12 text-center">
+              <div class="block-heading-1">
+                <h2>Speakers</h2>
+
+                <div class="row my-5 align-items-center">
+                  <img src="./images/speakers/kirk-borne.jpeg" alt="Sample image" class="rounded-circle col-md-3">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5;">
+                    <div class="card-body">
+                      <h5 align="left" class="card-title">Kirk Borne - Keynote</h5>
+                      <h6 align="left"><b>Data Prime Inc.</b> / Architect</h6>
+                      <p align="left" class="card-text">Dr. Kirk Borne is Chief Science Officer at startup Data Prime Inc. since April 2021, and founder of his own freelance influencer marketing business Data Leadership Group LLC. He is a career data professional, data science leader, and research astrophysicist. From 2015 to 2021, he was Principal Data Scientist, Data Science Fellow, and Executive Advisor at Booz Allen Hamilton. Previously, Kirk was professor of Astrophysics and Computational Science at George Mason University for 12 years where he taught data science at the graduate and undergraduate levels. He has been an Adjunct Professor at the University of Maryland Global Campus and at the University of Texas in Arlington. Before that, he spent 20 years supporting data systems activities for NASA space science missions, including the Hubble Telescope and at NASA's Space Science Data Operations Office. He has a Ph.D. in astronomy from Caltech. Since 2013, he has been identified as a top worldwide influencer on social media, promoting data science, machine learning, AI, IoT strategy, and data literacy for all.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row my-5 align-items-center">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5;">
+                    <div class="card-body">
+                      <h5 align="right" class="card-title">Roshan Punnoose - Compliance Policy document scoring using Natural Language Processing</h5>
+                      <h6 align="right"><b>Digital Lantern</b> / Architect</h6>
+                      <p align="right" class="card-text">History of working in the information technology and services industry. Skilled in Big Data solutions, Cyber datasets, Databases, Hadoop, AWS, Machine Learning, and much more.</p>
+                    </div>
+                  </div>
+                  <img src="./images/speakers/roshan-punnoose.jpeg" alt="Sample image" class="rounded-circle col-md-3">
+                </div>
+
+                <div class="row my-5 align-items-center">
+                  <img src="./images/speakers/ope-arowojolu.jpeg" alt="Sample image" class="rounded-circle col-md-3">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5">
+                    <div class="card-body">
+                      <h5 align="left" class="card-title align-right">Ope Arowojolu - Compliance Policy document scoring using Natural Language Processing</h5>
+                      <h6 align="left"><b>Digital Lantern</b> / Architect</h6>
+                      <p align="left" class="card-text">Working on Big Data Analytics and Cloud Computing with a history of Real-Time software development experience on embedded platforms - architect, design, develop & test from feature proposal to systems verification and project delivery using object-oriented designs, agile and scrum methodologies.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="row my-5 align-items-center">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5">
+                    <div class="card-body">
+                      <h5 align="right" class="card-title align-right">Speaker Name - Talk title</h5>
+                      <h6 align="right"><b>Company</b> / Position</h6>
+                      <p align="right" class="card-text">Bio</p>
+                    </div>
+                  </div>
+                  <img src="./images/speakers/blank-profile-picture-973460_1280.png" alt="Sample image" class="rounded-circle col-md-3">
+                </div>
+
+                <div class="row my-5 align-items-center">
+                  <img src="./images/speakers/blank-profile-picture-973460_1280.png" alt="Sample image" class="rounded-circle col-md-3">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5">
+                    <div class="card-body">
+                      <h5 align="left" class="card-title align-right">Speaker Name - Talk title</h5>
+                      <h6 align="left"><b>Company</b> / Position</h6>
+                      <p align="left" class="card-text">Bio</p>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="row my-5 align-items-center">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5;">
+                    <div class="card-body">
+                      <h5 align="right" class="card-title">John Muschelli - Streamlining Data: Tidy Data as a Service</h5>
+                      <h6 align="right"><b>Streamline Data Science</b> / Chief Product Officer</h6>
+                      <p align="right" class="card-text">John was formerly a research professor of Biostatistics at the Johns Hopkins Bloomberg School of Public Health and is an expert in the R programming language. He has built over 50 software packages for data cleaning and analysis.  His work spans a number of different data inputs, data problems, and data solutions, including neuroimaging, clinical trials, and electronic medical records.</p>
+                    </div>
+                  </div>
+                  <img src="./images/speakers/blank-profile-picture-973460_1280.png" alt="Sample image" class="rounded-circle col-md-3">
+                </div>
+
+                <!-- <div class="row my-5 align-items-center">
+                  <img src="./images/speakers/blank-profile-picture-973460_1280.png" alt="Sample image" class="rounded-circle col-md-3">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5;">
+                    <div class="card-body">
+                      <h5 align="left" class="card-title">BigBear Panel - Talk Title</h5>
+                      <h6 align="left"><b>BigBear.ai</b> / Position</h6>
+                      <p align="left" class="card-text">Bio</p>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="row my-5 align-items-center">
+                  <img src="./images/speakers/sean-mussenden.jpeg" alt="Sample image" class="rounded-circle col-md-3">
+                  <div class="card col-md-9" style="border: 0; background: #f6f5f5">
+                    <div class="card-body">
+                      <h5 align="left" class="card-title align-right">Sean Mussenden - Talk title</h5>
+                      <h6 align="left"><b>Howard Center for the Investigative Journalism</b> / Data Scientist</h6>
+                      <p align="left" class="card-text">Sean Mussenden is an award-winning data journalist, a veteran college professor and a researcher. He specializes in the application of data science methodologies - drawn from a range of academic disciplines - to the investigative reporting process, and in the use of emerging technology and large-scale public information act request campaigns to acquire data and digital documents. His investigative data work has appeared in the Washington Post, the Associated Press, USA Today, NPR, PBS NewsHour, Kaiser Health News, Slate and many other publications.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="site-section py-5 bg-dark" id="sponsors">
         <div class="container">
-          <div class="row mb-5 justify-content-center">
+          <div class="row mb-3 justify-content-center">
             <div class="col-md-7 text-center">
               <div class="block-heading-1">
                 <h2>Sponsors</h2>
@@ -439,224 +588,158 @@
         </div>
 
         <!-- TODO: replicate 2 blocks below as needed for other sponsor tiers -->
-        <div class="container">
-          <div class="row mb-3 justify-content-center">
-            <div class="col-md-7 text-center">
-              <div class="block-heading-1">
-                <h3>Presented By</h3>
+        <div class="container text-center">
+          <div class="block-heading-1 text-center">
+            <h3>Hosted By</h3>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img class="col-md-12" src="images/sponsors/dataworksmd-sq.png" alt="DataWorksMD">
+                  <p>Data Works MD consists of professionals, students, and enthusiasts living and working in the Maryland area that are interested in topics related to data science, data analytics, data products, software engineering, machine learning, and other data engineering topics.</p>
+                  <a
+                    href="https://www.linkedin.com/company/dataworksmd/"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a
+                    href="https://twitter.com/dataworksmd"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                  <a
+                    href="mailto:info@dataworksmd.org"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-envelope"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img class="col-md-12" src="images/sponsors/erias-sq.png" alt="EriasVentures">
+                  <p>Erias Ventures was founded to serve its customers with an entrepreneurship mindset. We value taking action, having the courage to commit, and persevering through challenges and failures.</p>
+                  <a
+                    href="https://www.linkedin.com/company/eriasventures"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a
+                    href="https://twitter.com/eriasventures"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                  <a
+                    href="http://careers.eriasventures.com"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-bullhorn"></span
+                  ></a>
+                  <a
+                    href="mailto:info@eriasventures.com"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-envelope"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img class="col-md-12" src="images/sponsors/clearedge-sq.png" alt="ClearEdge">
+                  <p>ClearEdge is a mission-driven technology thought leader grown out of the Intelligence Community that provides software engineering, big data, cloud, data analytics, and data science solutions and services. We are committed to exceeding our customer’s expectations by attracting and retaining top-tier engineers and experts.</p>
+                  <a
+                    href="https://www.linkedin.com/company/clearedge-it-solutions-llc/"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a
+                    href="https://twitter.com/ClearEdgeIT"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                  <a
+                    href="http://clearedgeit.com/careers.html"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-bullhorn"></span
+                  ></a>
+                  <a
+                    href="mailto:info@clearedgeit.com"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-envelope"></span
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="owl-carousel owl-sponsors">
-          <!-- Data Works MD -->
-          <div class="block-team-member-1 text-center rounded h-100">
-            <h4>Host Sponsor</h4>
-            <div class="block-about-1">
-              <figure>
-                <a href="https://dataworksmd.org/" target="_blank"
-                  ><img
-                    src="images/sponsors/dataworksmd-sq.png"
-                    alt="Data Works MD"
-                /></a>
-              </figure>
-              <p class="mb-3">
-                Data Works MD consists of professionals, students, and
-                enthusiasts living and working in the Maryland area that are
-                interested in topics related to data science, data analytics,
-                data products, software engineering, machine learning, and other
-                data engineering topics.
-              </p>
-            </div>
-            <div class="block-social-1">
-              <a
-                href="https://www.linkedin.com/company/dataworksmd/"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-linkedin"></span
-              ></a>
-              <a
-                href="https://twitter.com/dataworksmd"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-twitter"></span
-              ></a>
-              <a
-                href="mailto:info@dataworksmd.org"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-envelope"></span
-              ></a>
-            </div>
+
+          <div class="block-heading-1 text-center">
+            <h3>Sponsored By</h3>
           </div>
-          <!-- Erias Ventures -->
-          <div class="block-team-member-1 text-center rounded h-100">
-            <h4>Host Sponsor</h4>
-            <div class="block-about-1">
-              <figure>
-                <a href="https://www.eriasventures.com" target="_blank"
-                  ><img src="images/sponsors/erias-sq.png" alt="Erias Ventures"
-                /></a>
-              </figure>
-              <p class="mb-3">
-                Erias Ventures was founded to serve its customers with an
-                entrepreneurship mindset. We value taking action, having the
-                courage to commit, and persevering through challenges and
-                failures.
-              </p>
+          <div class="row justify-content-center">
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img class="col-md-12" src="images/sponsors/bigbear-sq.png" alt="DataWorksMD">
+                  <p>BigBear.ai is the new leader in decision dominance serving the national defense and intelligence communities. The Company delivers high-end capabilities across the data and digital spectrum to deliver information superiority and decision support. BigBear.ai provides a comprehensive suite of solutions including artificial intelligence and machine learning, data science, advanced analytics, offensive and defensive cyber, data management, cloud solutions, digital engineering, and systems integration.</p>
+                  <a
+                    href="https://www.linkedin.com/company/bigbearai"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a
+                    href="https://twitter.com/bigbearai"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                  <a
+                    href="https://bigbear.ai/careers/"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-bullhorn"></span
+                  ></a>
+                  <a
+                    href="mailto:info@bigbear.ai"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-envelope"></span
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="block-social-1">
-              <a
-                href="https://www.linkedin.com/company/eriasventures"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-linkedin"></span
-              ></a>
-              <a
-                href="https://twitter.com/eriasventures"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-twitter"></span
-              ></a>
-              <a
-                href="http://careers.eriasventures.com"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-bullhorn"></span
-              ></a>
-              <a
-                href="mailto:info@eriasventures.com"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-envelope"></span
-              ></a>
-            </div>
-          </div>
-          <!-- ClearEdge -->
-          <div class="block-team-member-1 text-center rounded h-100">
-            <h4>Host Sponsor</h4>
-            <div class="block-about-1">
-              <figure>
-                <a href="http://clearedgeit.com/" target="_blank"
-                  ><img src="images/sponsors/clearedge-sq.png" alt="ClearEdge"
-                /></a>
-              </figure>
-              <p class="mb-3">
-                ClearEdge is a mission-driven technology thought leader grown
-                out of the Intelligence Community that provides software
-                engineering, big data, cloud, data analytics, and data science
-                solutions and services. We are committed to exceeding our
-                customer’s expectations by attracting and retaining top-tier
-                engineers and experts.
-              </p>
-            </div>
-            <div class="block-social-1">
-              <a
-                href="https://www.linkedin.com/company/clearedge-it-solutions-llc/"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-linkedin"></span
-              ></a>
-              <a
-                href="https://twitter.com/ClearEdgeIT"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-twitter"></span
-              ></a>
-              <a
-                href="http://clearedgeit.com/careers.html"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-bullhorn"></span
-              ></a>
-              <a
-                href="mailto:info@clearedgeit.com"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-envelope"></span
-              ></a>
-            </div>
-          </div>
-          <!-- BigBear -->
-          <div class="block-team-member-1 text-center rounded h-100">
-            <h4>Swag Sponsor</h4>
-            <div class="block-about-1">
-              <figure>
-                <a href="http://bigbear.ai/" target="_blank"
-                  ><img src="images/sponsors/bigbear-sq.png" alt="BigBear.AI"
-                /></a>
-              </figure>
-              <p class="mb-3">
-                BigBear.ai is the new leader in decision dominance serving the
-                national defense and intelligence communities. The Company
-                delivers high-end capabilities across the data and digital
-                spectrum to deliver information superiority and decision
-                support. BigBear.ai provides a comprehensive suite of solutions
-                including artificial intelligence and machine learning, data
-                science, advanced analytics, offensive and defensive cyber, data
-                management, cloud solutions, digital engineering, and systems
-                integration.
-              </p>
-            </div>
-            <div class="block-social-1">
-              <a
-                href="https://www.linkedin.com/company/bigbearai"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-linkedin"></span
-              ></a>
-              <a
-                href="https://twitter.com/bigbearai"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-twitter"></span
-              ></a>
-              <a
-                href="https://bigbear.ai/careers/"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-bullhorn"></span
-              ></a>
-              <a
-                href="mailto:info@bigbear.ai"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-envelope"></span
-              ></a>
-            </div>
-          </div>
-          <!-- O'Reilly -->
-          <div class="block-team-member-1 text-center rounded h-100">
-            <h4>Swag Sponsor</h4>
-            <div class="block-about-1">
-              <figure>
-                <a href="https://www.oreilly.com/" target="_blank"
-                  ><img
-                    src="images/sponsors/oreilly-sq.png"
-                    alt="O'Reilly Media"
-                /></a>
-              </figure>
-              <p class="mb-3">
-                O’Reilly’s mission is to change the world by sharing the
-                knowledge of innovators. For over 40 years, we’ve inspired
-                companies and individuals to do new things—and do things
-                better—by providing them with the skills and understanding that
-                are necessary for success.
-              </p>
-            </div>
-            <div class="block-social-1">
-              <a
-                href="https://www.linkedin.com/company/oreilly-media/"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-linkedin"></span
-              ></a>
-              <a
-                href="https://twitter.com/oreillymedia"
-                target="_blank"
-                class="btn border-w-2 rounded primary-primary-outline--hover"
-                ><span class="icon-twitter"></span
-              ></a>
+            <div class="col-md-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img class="col-md-12" src="images/sponsors/oreilly-sq.png" alt="oreilly">
+                  <p>O'Reilly's mission is to change the world by sharing the knowledge of innovators. For over 40 years, we've inspired companies and individuals to do new things—and do things better—by providing them with the skills and understanding that are necessary for success.</p>
+                  <a
+                    href="https://www.linkedin.com/company/oreilly-media/"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a
+                    href="https://twitter.com/oreillymedia"
+                    target="_blank"
+                    class="btn border-w-2 rounded primary-primary-outline--hover"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -956,6 +1039,44 @@
                     </div>
                   </dd>
                 </dl>
+                <h3>Venue questions</h3>
+                <dl class="qa">
+                  <dt
+                    class="collapsed"
+                    aria-controls="faq-venue-information"
+                    data-target="#faq-venue-information"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    role="button"
+                  >
+                    <span class="icon icon-chevron-right"></span>
+                    Where will the conference be held?
+                  </dt>
+                  <dd class="collapse" id="faq-venue-information">
+                    <div>
+                      The conference will be held at the UMBC Performing Arts & Humanities Building. The building is located at 1000 Hilltop Cir, Baltimore, MD 21250.
+                    </div>
+                    <div class="text-center">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.4606439647155!2d-76.71741088463904!3d39.25511367951705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8c200c690f82409!2sUMBC%20Performing%20Arts%20%26%20Humanities%20Building!5e0!3m2!1sen!2sus!4v1644250490233!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                  </dd>
+                  <dt
+                    class="collapsed"
+                    aria-controls="faq-venue-parking"
+                    data-target="#faq-venue-parking"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    role="button"
+                  >
+                    <span class="icon icon-chevron-right"></span>
+                    Where can I park for the event?
+                  </dt>
+                  <dd class="collapse" id="faq-venue-parking">
+                    <div>
+                      Parking for DAX 2022 is available at <a href="https://goo.gl/maps/E7edbwhfcsonG1Bo9">UMBC Lot 8</a>.
+                    </div>
+                  </dd>
+                </dl>
               </div>
             </div>
           </div>
@@ -1028,13 +1149,13 @@
               <h2 class="footer-heading mb-4">Contact Us</h2>
               <div class="footer-font">
                 <a href="http://twitter.daxconf.org" class="pl-1 pr-1"
-                  ><span class="icon-twitter"></span
+                  ><span class="icon-twitter" style="color: white;"></span
                 ></a>
                 <a href="http://meetup.dataworksmd.org" class="pl-2 pr-2"
-                  ><span class="icon-meetup"></span
+                  ><span class="icon-meetup" style="color: white;"></span
                 ></a>
                 <a href="mailto:info@daxconf.org" class="pl-2 pr-0"
-                  ><span class="icon-envelope"></span
+                  ><span class="icon-envelope" style="color: white;"></span
                 ></a>
               </div>
             </div>
