@@ -1890,3 +1890,7 @@ h1, h2, h3, h4, h5,
 .card-body span {
   color: black;
 }
+
+.sponsor-description span {
+  color: #ff5757;
+}
