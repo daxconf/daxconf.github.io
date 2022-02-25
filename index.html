@@ -82,6 +82,14 @@
           margin-right: auto;
         }
       }
+      @media screen and (max-width: 768px) {
+        .sponsor-image {
+          width: 60%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
       .qa {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         margin: 1rem 0 3rem 0;
@@ -976,100 +984,113 @@
 
       <div class="site-section py-5 bg-dark" id="sponsors">
         <div class="container">
-          <div class="row mb-3 justify-content-center">
+          <div class="row mb-5 justify-content-center">
             <div class="col-md-7 text-center">
               <div class="block-heading-1">
                 <h2>Sponsors</h2>
-                <p>We are proudly supported by the following organizations.</p>
+                <h4>We are proudly supported by the following organizations.</h4>
               </div>
             </div>
           </div>
         </div>
 
         <!-- TODO: replicate 2 blocks below as needed for other sponsor tiers -->
-        <div class="container text-center">
+        <div class="container text-center mx-auto">
           <div class="block-heading-1 text-center">
-            <h3>Hosts</h3>
+            <h3 style="color: #fff">Hosts</h3>
           </div>
-          <div class="row mb-4">
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://dataworksmd.org"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/dataworksmd-sq.png"
-                      alt="DataWorksMD"
-                  /></a>
-                  <p>
+          <div class="bg-light mb-5">
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="https://dataworksmd.org">
+                <img
+                  src="./images/sponsors/dataworksmd-sq.png"
+                  alt="DataworksMD"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     Data Works MD consists of professionals, students, and
                     enthusiasts living and working in the Maryland area that are
                     interested in topics related to data science, data
                     analytics, data products, software engineering, machine
                     learning, and other data engineering topics.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/dataworksmd/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/dataworksmd"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/dataworksmd/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/dataworksmd"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://eriasventures.com"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/erias-sq.png"
-                      alt="EriasVentures"
-                    />
-                  </a>
-                  <p>
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4 order-md-12" href="https://eriasventures.com">
+                <img
+                  src="./images/sponsors/erias-sq.png"
+                  alt="Erias Ventures"
+                  class="sponsor-image col-md-12"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-1"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="right" class="card-text">
                     Erias Ventures was founded to serve its customers with an
                     entrepreneurship mindset. We value taking action, having the
                     courage to commit, and persevering through challenges and
                     failures.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/eriasventures"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/eriasventures"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="http://careers.eriasventures.com"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="right">
+                    <a
+                      href="https://www.linkedin.com/company/eriasventures"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/eriasventures"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color: #ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="http://careers.eriasventures.com"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="http://clearedgeit.com/">
-                    <img
-                      class="col-md-12"
-                      src="images/sponsors/clearedge-sq.png"
-                      alt="ClearEdge"
-                  /></a>
-                  <p>
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="http://clearedgeit.com">
+                <img
+                  src="./images/sponsors/clearedge-sq.png"
+                  alt="ClearEdge"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     ClearEdge is a mission-driven technology thought leader
                     grown out of the Intelligence Community that provides
                     software engineering, big data, cloud, data analytics, and
@@ -1077,43 +1098,47 @@
                     exceeding our customer’s expectations by attracting and
                     retaining top-tier engineers and experts.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/clearedge-it-solutions-llc/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/ClearEdgeIT"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="http://clearedgeit.com/careers.html"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/clearedge-it-solutions-llc/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/ClearEdgeIT"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="http://clearedgeit.com/careers.html"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="block-heading-1 text-center">
-            <h3>Silver Sponsors</h3>
+            <h3 style="color: #d5d5d7">Silver Sponsors</h3>
           </div>
-          <div class="row justify-content-center mb-3">
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://boeing.com">
-                    <img
-                      class="col-md-12"
-                      src="images/sponsors/boeing-sq.png"
-                      alt="Boeing"
-                  /></a>
-                  <p>
+          <div class="bg-light mb-5">
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="https://boeing.com">
+                <img
+                  src="./images/sponsors/boeing-sq.png"
+                  alt="Boeing"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     Boeing is the world's largest aerospace company and leading
                     manufacturer of commercial jetliners, defense, space and
                     security systems, and service provider of aftermarket
@@ -1123,36 +1148,42 @@
                     information and communication systems, and performance-based
                     logistics and training.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/boeing/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/Boeing"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="https://jobs.boeing.com/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/boeing/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/Boeing"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="https://jobs.boeing.com/"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <img
-                    class="col-md-12"
-                    src="images/sponsors/collabraspace-sq.png"
-                    alt="Collabraspace"
-                  />
-                  <p>
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4 order-md-12" href="#">
+                <img
+                  src="./images/sponsors/collabraspace-sq.png"
+                  alt="Collabraspace"
+                  class="sponsor-image col-md-12"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-1"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="right" class="card-text">
                     CollabraSpace is a proven leader in providing real-time
                     collaboration and enterprise software development solutions
                     to both government and private industry. Headquartered in
@@ -1160,38 +1191,42 @@
                     an incredibly talented group of software and systems
                     engineers with deep experience in the latest technologies.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/collabraspace/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/CollabraSpace"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="https://www.collabraspace.com/careers/career-opportunities/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="right">
+                    <a
+                      href="https://www.linkedin.com/company/collabraspace/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/CollabraSpace"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color: #ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="https://www.collabraspace.com/careers/career-opportunities/"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://intelliforce-itsg.com/"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/intelliforce-sq.png"
-                      alt="Intelliforce"
-                  /></a>
-
-                  <p class="mt-auto">
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="https://intelliforce-itsg.com/">
+                <img
+                  src="./images/sponsors/intelliforce-sq.png"
+                  alt="Intelliforce"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     Intelliforce-IT Solutions Group is a Maryland-based
                     woman-owned small business (WOSB) founded in 2012 to provide
                     Intelligent Solutions for the Intelligence Community. The
@@ -1200,43 +1235,47 @@
                     analytics, big data, AI/ML, data science, cybersecurity, and
                     visualization.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/intelliforce-itsg/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/IntelliforceIT"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="https://intelliforce-itsg.com/current-openings"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/intelliforce-itsg/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/IntelliforceIT"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="https://intelliforce-itsg.com/current-openings"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="block-heading-1 text-center">
-            <h3>Copper Sponsors</h3>
+            <h3 style="color: #da8a67">Copper Sponsors</h3>
           </div>
-          <div class="row justify-content-center mb-3">
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://fearless.tech/"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/fearless-sq.png"
-                      alt="Fearless"
-                  /></a>
-                  <p class="mt-auto">
+          <div class="bg-light mb-5">
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="https://fearless.tech/">
+                <img
+                  src="./images/sponsors/fearless-sq.png"
+                  alt="Fearless"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     Fearless is a full stack digital services firm in Baltimore
                     that delivers sleek, modern, and user-friendly software
                     designed to push the boundaries of possibility. We build
@@ -1245,43 +1284,48 @@
                     innovative digital tools that allow users to perform at
                     their maximum potential.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/fearlessbmore/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/fearlessbmore"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="https://fearless.tech/careers"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/fearlessbmore/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/fearlessbmore"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="https://fearless.tech/careers"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="block-heading-1 text-center">
-            <h3>Swag Sponsors</h3>
+            <h3 style="color: #ff5757">Swag Sponsors</h3>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://bigbear.ai/"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/bigbear-horizontal-sq.png"
-                      alt="DataWorksMD"
-                  /></a>
-                  <p>
+          <div class="bg-light mb-5">
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4" href="https://bigbear.ai/">
+                <img
+                  src="./images/sponsors/bigbear-sq.png"
+                  alt="BigBear"
+                  class="sponsor-image col-md-12 order-md-1"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-12"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="left" class="card-text">
                     BigBear.ai is the new leader in decision dominance serving
                     the national defense and intelligence communities. The
                     Company delivers high-end capabilities across the data and
@@ -1292,55 +1336,61 @@
                     defensive cyber, data management, cloud solutions, digital
                     engineering, and systems integration.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/bigbearai"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/bigbearai"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                  <a
-                    href="https://bigbear.ai/careers/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-bullhorn"></span
-                  ></a>
+                  <p align="left">
+                    <a
+                      href="https://www.linkedin.com/company/bigbearai"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/bigbearai"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color:#ff5757"></span>
+                    </a> 
+                    /
+                    <a
+                      href="https://bigbear.ai/careers/"
+                      target="_blank"
+                      ><span class="icon-briefcase" style="color: #ff5757"></span>
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card mb-3">
-                <div class="card-body text-center">
-                  <a href="https://www.oreilly.com/"
-                    ><img
-                      class="col-md-12"
-                      src="images/sponsors/oreilly-sq.png"
-                      alt="oreilly"
-                  /></a>
-                  <p>
+            <div class="row bg-light align-items-center">
+              <a class="col-md-4 order-md-12" href="https://www.oreilly.com/">
+                <img
+                  src="./images/sponsors/oreilly-sq.png"
+                  alt="Oreilly"
+                  class="sponsor-image col-md-12"
+                />
+              </a>
+              <div
+                class="card bg-light col-md-8 order-md-1"
+                style="border: 0;"
+              >
+                <div class="card-body" style="font-size: 14pt;">
+                  <p align="right" class="card-text">
                     O'Reilly's mission is to change the world by sharing the
                     knowledge of innovators. For over 40 years, we've inspired
                     companies and individuals to do new things—and do things
                     better—by providing them with the skills and understanding
                     that are necessary for success.
                   </p>
-                  <a
-                    href="https://www.linkedin.com/company/oreilly-media/"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                  <a
-                    href="https://twitter.com/oreillymedia"
-                    target="_blank"
-                    class="btn border-w-2 rounded primary-primary-outline--hover"
-                    ><span class="icon-twitter"></span
-                  ></a>
+                  <p align="right">
+                    <a
+                      href="https://www.linkedin.com/company/oreilly-media/"
+                      target="_blank"
+                      ><span class="icon-linkedin" style="color: #ff5757"></span> 
+                    </a> 
+                    /
+                    <a
+                      href="https://twitter.com/oreillymedia"
+                      target="_blank"
+                      ><span class="icon-twitter" style="color: #ff5757"></span>
+                    </a> 
+                  </p>
                 </div>
               </div>
             </div>
