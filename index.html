@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DAX 2022: Data | Analytics | Exploration</title>
+    <title>DAX 2023: Data | Analytics | Exploration</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
       property="og:title"
-      content="DAX 2022: Data | Analytics | Exploration"
+      content="DAX 2023: Data | Analytics | Exploration"
     />
     <meta property="og:image" content="images/dax2022-linkedin.png" />
     <meta
@@ -66,80 +66,6 @@
       gtag("config", "G-YDF4DJSNBQ");
     </script>
 
-    <!-- TODO Finalize and migrate to style.css -->
-    <style>
-      #schedule h5 span {
-        font-size: 100%;
-      }
-      #navRegisterButton {
-        color: #fff !important;
-      }
-      @media screen and (max-width: 768px) {
-        .speaker-image {
-          width: 60%;
-          height: auto;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .sponsor-image {
-          width: 60%;
-          height: auto;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-      .qa {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        margin: 1rem 0 3rem 0;
-        padding: 0;
-      }
-      .qa dt {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        font-size: 1.1em;
-        font-weight: bold;
-        margin: 0;
-        padding: 0.75rem 0.75rem 0.75rem 2.25rem;
-        /* Required for proper chevron icon placement */
-        position: relative;
-      }
-      .qa dt.collapsed:hover {
-        background-color: rgba(0, 0, 0, 0.025);
-      }
-      .qa dt > span.icon {
-        color: #939393;
-        display: inline-block;
-        left: 10px;
-        position: absolute;
-        top: 1.3rem;
-      }
-      .qa dt > span.icon:before {
-        display: inline-block;
-        font-size: 12px;
-        font-weight: bold;
-        transform: rotate(90deg);
-        transition: 0.3s all ease;
-      }
-      .qa dt.collapsed {
-        font-weight: normal;
-      }
-      .qa dt.collapsed > span.icon:before {
-        font-weight: normal;
-        transform: rotate(0);
-      }
-      .qa dd {
-        margin: 0;
-        padding: 0;
-      }
-      .qa dd > div {
-        padding: 0 0.75rem 1rem 2.25rem;
-      }
-      .bg-dark {
-        background-color: #575757 !important;
-      }
-    </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -167,9 +93,19 @@
         <div class="container">
           <div class="row align-items-center position-relative">
             <div class="site-logo">
-              <a href="index.html" class="text-black"
-                ><span class="text-primary">DAX 2022</span></a
-              >
+              <a href="./" class="text-black">
+
+                <!-- Option 1: DAX text-->
+                <span class="text-primary">DAX 2023</span>  
+
+                <!-- Option 2: DAX logo -->
+                <!-- <img
+                  src="./images/DAX-only.png"
+                  style="height: 32px;"
+                  alt="DAX Logo"
+                /> -->
+
+              </a>
             </div>
             <div class="col-12">
               <nav class="site-navigation text-right ml-auto" role="navigation">
@@ -181,6 +117,7 @@
                   <li><a href="#speakers" class="nav-link">Speakers</a></li>
                   <li><a href="#partners" class="nav-link">Partners</a></li>
                   <li><a href="#faq" class="nav-link">FAQ</a></li>
+                  <li><a href="/2022/" class="nav-link">DAX 2022</a></li>
                   <!--
                   <li>
                     <a
@@ -215,14 +152,14 @@
             <div class="row align-items-center justify-content-center">
               <div class="text-center">
                 <img
-                  src="images/dax2022.png"
+                  src="images/dax-2023.png"
                   class="img-fluid"
                   alt="DAX Logo"
                 />
-                <h4 class="text-black mt-3">June 4, 2022</h4>
+                <h2 class="text-black mt-4">Save the Date – June 10, 2023</h2>
                 <img
                   src="images/sponsors/umbc-sq.png"
-                  class="img-fluid col-md-3 col-sm-5 col-7"
+                  class="img-fluid col-md-3 col-sm-5 col-7 mt-4"
                   alt="UMBC"
                 />
                 <h5 class="text-black mt-3">
@@ -250,8 +187,8 @@
             <div class="col-md-10 text-center">
               <div class="block-heading-1">
                 <h2>About DAX</h2>
-                <h4>
-                  DAX 2022 was a huge success!
+                <h4 class="my-4">
+                  <a href="./2022">DAX 2022</a> was a huge success!
                   <a
                     href="https://www.youtube.com/watch?v=dwx8x7o9V3A&list=PLgqwinaq-u-NkWGq_yjqW3GJr0dVjWdJJ&ab_channel=DataWorksMD"
                     >Videos are now live!</a
@@ -279,7 +216,7 @@
                 <div class="col-4 col-md-4 mb-4 col-lg-0 col-lg-4">
                   <div class="block-counter-1">
                     <h2 class="icon-chat number"></h2>
-                    <span class="caption">11 Speakers</span>
+                    <span class="caption">Industry Leading Speakers</span>
                   </div>
                 </div>
                 <div class="col-4 col-md-4 mb-4 col-lg-0 col-lg-4">
@@ -302,7 +239,7 @@
         </div>
       </div>
 
-      <div class="site-section py-5 bg-dark" id="schedule">
+      <!-- <div class="site-section py-5 bg-dark" id="schedule">
         <div class="container">
           <div class="row mb-10 justify-content-center">
             <div class="col-md-12 text-center">
@@ -343,13 +280,12 @@
                     <a href="#speakers">Kirk Borne</a>
                     - The Future of AI - Creating Value at the Convergence of
                     Emerging Technologies
-                    <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
+                    <i class="fas fa-user"></i> <strong>Speaker</strong>, Company
                   </div>
                   <div class="bg-light text-black">
                     <div class="pt-3">
                       <div class="mx-3 text-left">
                         <p>
-                          <!-- Talk Description -->
                           Data-driven applications are the norm in business,
                           industry, and our personal lives. These applications
                           increasingly engage various existing and emerging
@@ -587,7 +523,7 @@
                     &
                     <a href="#speaker-panel">Sammy Hamilton</a> - AI/ML
                     Innovation within the Defense Industry
-                    <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
+                    <i class="fas fa-user"></i> <strong>Speaker</strong>, Company
                   </div>
                   <div class="bg-light text-black">
                     <div class="pt-3">
@@ -612,14 +548,14 @@
                     </h5>
                     <a href="#bottom-speakers">Tianle Yuan</a>
                     - Mining Satellite Data for Ship Track
-                    <!-- <i class="fas fa-user"></i> <strong>Speaker</strong>, Company -->
+                    <i class="fas fa-user"></i> <strong>Speaker</strong>, Company
                   </div>
                   <div class="bg-light text-black">
                     <div class="pt-3">
                       <div class="mx-3 text-left">
                         <p>
-                          <!-- Talk Description -->
-                          Our team combed through half petabyte of satellite
+                          Talk Description -->
+                          <!-- Our team combed through half petabyte of satellite
                           data to find rare features called ship-tracks. They
                           can be used to tackle one of the key uncertainty of
                           climate science. In this talk, we document how we use
@@ -1255,7 +1191,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="site-section py-5 bg-dark" id="partners">
         <div class="container">
@@ -1388,8 +1324,34 @@
               </div>
             </div>
           </div>
-
           <div class="block-heading-1 text-center">
+            <h3 style="color: #fff">SPONSORS</h3>
+          </div>
+          <div class="bg-light mb-5">
+            <div class="row bg-light px-2 pt-4">
+              <div class="col text-left">
+                <p>
+                  DAX presents an ideal opportunity to boost your company’s 
+                  profile among an audience composed of some of the region's 
+                  leading developers, influencers, and decision makers. 
+                  Sponsorship of this event will not only provide you with a 
+                  high profile opportunity to strengthen market awareness of 
+                  your services and offerings, but it will highlight your 
+                  position as a key industry leader within the local 
+                  data-driven community.
+                </p>
+              </div>
+            </div>
+            <div class="row bg-light align-items-center px-2 pb-4">
+              <div class="col">
+                <a class="btn btn-primary text-white shadow-none rounded" href="mailto:info@daxconf.org">
+                  Contact Us For Sponsorship Information
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="block-heading-1 text-center">
             <h3 style="color: #d5d5d7">Silver Sponsors</h3>
           </div>
           <div class="bg-light mb-5">
@@ -1745,7 +1707,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -1809,10 +1771,10 @@
                     role="button"
                   >
                     <span class="icon icon-chevron-right"></span>
-                    When is DAX 2022?
+                    When is DAX 2023?
                   </dt>
                   <dd class="collapse" id="faq-when-is-dax">
-                    <div>DAX 2022 is scheduled for Saturday, June 4, 2022.</div>
+                    <div>DAX 2023 is scheduled for Saturday, June 10, 2023.</div>
                   </dd>
                   <dt
                     class="collapsed"
@@ -1823,11 +1785,11 @@
                     role="button"
                   >
                     <span class="icon icon-chevron-right"></span>
-                    Where is DAX 2022?
+                    Where is DAX 2023?
                   </dt>
                   <dd class="collapse" id="faq-where-is-dax">
                     <div>
-                      DAX 2022 will be held at the UMBC Performing Arts &
+                      DAX 2023 will be held at the UMBC Performing Arts &
                       Humanties Building at UMBC. Food and drinks will be served
                       in the Music Hall.
                     </div>
@@ -1862,7 +1824,7 @@
                     role="button"
                   >
                     <span class="icon icon-chevron-right"></span>
-                    Why should I attend DAX 2022?
+                    Why should I attend DAX 2023?
                   </dt>
                   <dd class="collapse" id="faq-why-attend">
                     <div>
@@ -1885,8 +1847,7 @@
                   </dt>
                   <dd class="collapse" id="faq-how-to-register">
                     <div>
-                      Registration is available through
-                      <a href="http://dax2022.eventbrite.com/">EventBrite</a>.
+                      Please check back for registration information.
                     </div>
                   </dd>
                   <dt
@@ -1902,9 +1863,7 @@
                   </dt>
                   <dd class="collapse" id="faq-cost">
                     <div>
-                      We offer discounted student tickets for $24.99 and
-                      early-bird discounted tickets for $74.99. Regular priced
-                      tickets are $99.99.
+                      Please check back for registration information.
                     </div>
                   </dd>
                   <dt
@@ -1919,7 +1878,7 @@
                     When does the early-bird discount end?
                   </dt>
                   <dd class="collapse" id="faq-early-bird-discount">
-                    <div>The early-bird discount will end March 4, 2022.</div>
+                    <div>Please check back for registration information.</div>
                   </dd>
                   <dt
                     class="collapsed"
@@ -1933,7 +1892,7 @@
                     Can I cancel my registration?
                   </dt>
                   <dd class="collapse" id="faq-cancellation">
-                    <div>Yes, but we would prefer if you didn't.</div>
+                    <div>Please check back for registration information.</div>
                   </dd>
                 </dl>
                 <h3>Event questions</h3>
@@ -2015,83 +1974,6 @@
                     </div>
                   </dd>
                 </dl>
-
-                <h3>COVID-19 questions</h3>
-                <dl class="qa">
-                  <dt
-                    class="collapsed"
-                    aria-controls="faq-covid"
-                    data-target="#faq-covid"
-                    data-toggle="collapse"
-                    aria-expanded="false"
-                    role="button"
-                  >
-                    <span class="icon icon-chevron-right"></span>
-                    What is the COVID-19 policy for the event?
-                  </dt>
-                  <dd class="collapse" id="faq-covid">
-                    <div>
-                      We are adhering to the venue policy which, as of February
-                      2022, requires each attendee to complete a COVID-19
-                      self-assessment checklist before arriving at the event. If
-                      you are experiencing any of the following symptoms you are
-                      asked to stay home.
-                      <ul>
-                        <li>A fever greater than 100.4 degrees Fahrenheit</li>
-                        <li>A cough</li>
-                        <li>Any shortness of breath or difficulty breathing</li>
-                        <li>Any repeated shaking with chills</li>
-                        <li>
-                          Any muscle pain that differs from any chronic pain
-                        </li>
-                        <li>A persistent headache</li>
-                        <li>A sore throat</li>
-                        <li>A new loss of taste or smell</li>
-                        <li>Fatigue</li>
-                        <li>Congestion or runny nose</li>
-                        <li>Nausea or vomiting</li>
-                        <li>Diarrhea</li>
-                      </ul>
-                    </div>
-                  </dd>
-                  <dt
-                    class="collapsed"
-                    aria-controls="faq-covid-masks"
-                    data-target="#faq-covid-masks"
-                    data-toggle="collapse"
-                    aria-expanded="false"
-                    role="button"
-                  >
-                    <span class="icon icon-chevron-right"></span>
-                    Are masks required?
-                  </dt>
-                  <dd class="collapse" id="faq-covid-masks">
-                    <div>
-                      As of February 2022, the venue requests face coverings to
-                      be work by attendees at all time except when eating or
-                      drinking.
-                    </div>
-                  </dd>
-                  <dt
-                    class="collapsed"
-                    aria-controls="faq-covid-distancing"
-                    data-target="#faq-lunch-served"
-                    data-toggle="collapse"
-                    aria-expanded="false"
-                    role="button"
-                  >
-                    <span class="icon icon-chevron-right"></span>
-                    What other precautions are being taken for COVID-19?
-                  </dt>
-                  <dd class="collapse" id="faq-covid-distancing">
-                    <div>
-                      All attendees are asked to maintain 3 feet of distance
-                      between guests. Hand sanitizer will be available
-                      throughout the venue.
-                    </div>
-                  </dd>
-                </dl>
-
                 <h3>Venue questions</h3>
                 <dl class="qa">
                   <dt
@@ -2135,7 +2017,7 @@
                   </dt>
                   <dd class="collapse" id="faq-venue-parking">
                     <div>
-                      Parking for DAX 2022 is available at
+                      Parking for DAX 2023 is available at
                       <a href="https://goo.gl/maps/E7edbwhfcsonG1Bo9"
                         >UMBC Lot 8</a
                       >.
@@ -2157,7 +2039,7 @@
                   </dt>
                   <dd class="collapse" id="faq-sponsor-availability">
                     <div>
-                      Yes! Please reach out to the team at info@daxconf.org for
+                      Yes! Please reach out to the team at <a href="mailto:info@daxconf.org">info@daxconf.org</a> for
                       more information.
                     </div>
                   </dd>
