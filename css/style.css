@@ -269,7 +269,7 @@
 }
 
 body {
-  line-height: 1.7;
+  /* line-height: 1.7; */
   font-weight: 400;
   font-size: 1rem;
 }
@@ -1920,12 +1920,14 @@ h1, h2, h3, h4, h5,
   }
 }
 .qa {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid #666;
   margin: 1rem 0 3rem 0;
   padding: 0;
 }
 .qa dt {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  border-top: 1px solid #666;
   cursor: pointer;
   font-size: 1.1em;
   font-weight: bold;
@@ -1974,4 +1976,14 @@ h1, h2, h3, h4, h5,
 }
 .site-navbar .site-navigation .site-menu > li > a.nav-link-highlight {
   color: #ff5757 !important;
+}
+
+.block-heading-1 span.badge {
+  font-weight: normal;
+}
+.schedule-speaker {
+  width: 150px;
+}
+#faq {
+  color: #ccc;
 }
